@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="533.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ui_layer.C_Player_Fitnessplan">
+   <children>
+      <AnchorPane fx:id="toppane" layoutX="1.0" layoutY="-100.0" onMouseEntered="#movePane2Down" onMouseExited="#resetPane2Position" prefHeight="200.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="436.0" fitWidth="800.0" layoutX="-2.0" layoutY="-236.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/gym.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bottompane" layoutX="1.0" layoutY="433.0" onMouseEntered="#movePaneUp" onMouseExited="#resetPanePosition" prefHeight="200.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="#f5eaea" layoutX="35.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Strength, discipline, and dedication—every rep brings you closer to victory." textAlignment="CENTER" />
+            <Text fill="#f5eaea" layoutX="35.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Motivational Highlight" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <Text fx:id="heading" layoutX="90.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Your Fitness, Your Rules – Select Your Plan!" textAlignment="CENTER" />
+      <ImageView fx:id="backicon" fitHeight="49.0" fitWidth="63.0" layoutX="24.0" layoutY="127.0" onMouseClicked="#click_backicon" onMouseEntered="#hover_backicon" onMouseExited="#reset_backicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/icon_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="yourplanicon" fitHeight="92.0" fitWidth="165.0" layoutX="125.0" layoutY="222.0" onMouseClicked="#click_yourplanicon" onMouseEntered="#hover_yourplanicon" onMouseExited="#reset_yourplanicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/dietplan5.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="selectplanicon" fitHeight="74.0" fitWidth="124.0" layoutX="565.0" layoutY="231.0" onMouseClicked="#click_selectplanicon" onMouseEntered="#hover_selectplanicon" onMouseExited="#reset_selectplanicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/icon_fitness.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="customplanicon" fitHeight="74.0" fitWidth="95.0" layoutX="359.0" layoutY="236.0" onMouseClicked="#click_customplanicon" onMouseEntered="#hover_customplanicon" onMouseExited="#reset_customplanicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/dietplan4.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="170.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Plans" />
+      <Text layoutX="350.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Custom Plan " />
+      <Text layoutX="541.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select From Available Plans" />
+      <Text fill="#fcf5f5" layoutX="83.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Circpro">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="64.0" fitWidth="66.0" layoutX="6.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/LOGO_NO_BACK.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

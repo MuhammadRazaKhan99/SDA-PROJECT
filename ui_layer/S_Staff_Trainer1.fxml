@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Staff_Trainer1">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="WHITE" layoutX="271.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Trainer Dashboard" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="menuicon" fitHeight="34.0" fitWidth="50.0" layoutX="3.0" layoutY="15.0" onMouseClicked="#click_menuicon" onMouseEntered="#hover_menuicon" onMouseExited="#reset_menuicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/icon_menu.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="lefttextpane" layoutY="63.0" opacity="0.8" prefHeight="467.0" prefWidth="116.0" style="-fx-background-color: #000000;">
+         <children>
+            <VBox layoutX="5.0" layoutY="27.0" prefHeight="200.0" prefWidth="128.0">
+               <children>
+                  <Label fx:id="homeLabel" onMouseClicked="#click_homeicon" prefHeight="38.0" prefWidth="145.0" text="  Home" textFill="WHITE" />
+                  <Label fx:id="joinclubLabel" onMouseClicked="#click_joinclub" prefHeight="39.0" prefWidth="147.0" text="  Join Club" textFill="WHITE" />
+                  <Label fx:id="conducttrainingLabel" onMouseClicked="#click_conducttraining" prefHeight="39.0" prefWidth="147.0" text="  Conduct Training" textFill="WHITE" />
+                  <Label fx:id="backLabel" onMouseClicked="#click_backicon" prefHeight="39.0" prefWidth="144.0" text="  Back" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="joinclubPane" layoutY="59.0" prefHeight="474.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="474.0" fitWidth="800.0" layoutY="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/nets.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="286.0" layoutX="576.0" layoutY="105.0" opacity="0.5" stroke="BLACK" strokeType="INSIDE" width="160.0" />
+            <Text layoutX="164.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join Club">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="597.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave Current Club?" />
+            <Button fx:id="b1" layoutX="621.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON1_leave" onMouseEntered="#hower_BUTTON1_leave" onMouseExited="#reset_BUTTON1_leave" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #000000;" text="Leave" textFill="#ffe5e5" />
+            <ImageView fitHeight="150.0" fitWidth="136.0" layoutX="582.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/question%20mark.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table1" layoutX="164.0" layoutY="105.0" prefHeight="286.0" prefWidth="398.0">
+               <columns>
+                  <TableColumn fx:id="col1_clubname" prefWidth="139.0" text="Club Name" />
+                  <TableColumn fx:id="col1_managername" prefWidth="142.0" text="Manager Name" />
+                  <TableColumn fx:id="col1_action" prefWidth="115.0" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="conducttrainingPane" layoutX="10.0" layoutY="60.0" prefHeight="474.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="474.0" fitWidth="800.0" layoutX="-8.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/nets.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table2" layoutX="132.0" layoutY="75.0" prefHeight="353.0" prefWidth="555.0">
+              <columns>
+                <TableColumn fx:id="col2_playername" prefWidth="150.0" text="Player Name" />
+                <TableColumn fx:id="col2_playerrole" prefWidth="90.0" text="Player Role" />
+                  <TableColumn fx:id="col2_stadiumname" prefWidth="95.0" text="Stadium Name" />
+                  <TableColumn fx:id="col2_d" prefWidth="90.0" text="Date" />
+                  <TableColumn fx:id="col2_action" prefWidth="120.0" />
+              </columns>
+            </TableView>
+            <Text layoutX="140.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conduct Training">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

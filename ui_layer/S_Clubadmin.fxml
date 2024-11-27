@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Clubadmin">
+   <children>
+      <ImageView fitHeight="497.0" fitWidth="800.0" layoutY="-42.0" opacity="0.7" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Pictures/office.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="165.0" layoutX="120.0" layoutY="190.0" opacity="0.2" stroke="BLACK" strokeType="INSIDE" width="613.0" />
+      <AnchorPane layoutY="-100.0" prefHeight="200.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="#fcf5f5" layoutX="58.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Circpro">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="64.0" fitWidth="66.0" layoutX="-4.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/LOGO_NO_BACK.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="bottompane" layoutX="-6.0" layoutY="419.0" onMouseEntered="#movePaneUp" onMouseExited="#resetPanePosition" prefHeight="200.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="#f5eaea" layoutX="25.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="Great managers inspire greatness. Lead with passion, build teamwork, and watch your cricket club achieve " textAlignment="CENTER" />
+            <Text fill="#f5eaea" layoutX="25.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 15;" text="excellence!" textAlignment="CENTER" />
+            <Text fill="#f5eaea" layoutX="25.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Motivational Highlight" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="72.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Club Management Dashboard" textAlignment="CENTER" />
+      <Text layoutX="348.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff Management">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="notifyicon" fitHeight="61.0" fitWidth="66.0" layoutX="711.0" layoutY="114.0" onMouseClicked="#click_notifyicon" onMouseEntered="#hover_notifyicon" onMouseExited="#reset_notifyicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/notify.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="backicon" fitHeight="49.0" fitWidth="63.0" layoutX="11.0" layoutY="113.0" onMouseClicked="#click_backicon" onMouseEntered="#hover_backicon" onMouseExited="#reset_backicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/icon_back.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconstaffmanagement" fitHeight="94.0" fitWidth="106.0" layoutX="359.0" layoutY="207.0" onMouseClicked="#click_staffmanagementicon" onMouseEntered="#hover_staffmanagementicon" onMouseExited="#reset_staffmanagementicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/profile.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iconplayermanagement" fitHeight="94.0" fitWidth="106.0" layoutX="176.0" layoutY="207.0" onMouseClicked="#click_playermanagementicon" onMouseEntered="#hover_playermanagementicon" onMouseExited="#reset_playermanagementicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/player_up.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="172.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Players ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="iconmatch" fitHeight="94.0" fitWidth="106.0" layoutX="552.0" layoutY="207.0" onMouseClicked="#click_matchicon" onMouseEntered="#hover_matchicon" onMouseExited="#reset_matchicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/match.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="554.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shedule Match">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

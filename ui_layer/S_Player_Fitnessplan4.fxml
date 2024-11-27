@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Player_Fitnessplan4">
+   <children>
+      <AnchorPane layoutX="-344.0" layoutY="-234.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text fill="WHITE" layoutX="99.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text=" Select From Suggested Plans" textAlignment="CENTER" />
+      <ImageView fx:id="backicon" fitHeight="49.0" fitWidth="63.0" layoutX="29.0" layoutY="30.0" onMouseClicked="#click_backicon" onMouseEntered="#hover_backicon" onMouseExited="#reset_backicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/icon_back2.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="22.0" layoutY="95.0" prefHeight="410.0" prefWidth="760.0">
+         <columns>
+            <TableColumn fx:id="col_planname" prefWidth="75.0" text="Plan Name" />
+            <TableColumn fx:id="col_goal" prefWidth="75.0" text="Goal" />
+            <TableColumn fx:id="col_exercises" prefWidth="75.0" text="Exercises" />
+            <TableColumn fx:id="col_duration" prefWidth="60.0" text="Duration" />
+            <TableColumn fx:id="col_intensity" prefWidth="70.0" text="Intensity" />
+            <TableColumn fx:id="col_frequency" prefWidth="75.0" text="Frequency" />
+            <TableColumn fx:id="col_restPeriod" prefWidth="70.0" text="Rest Period" />
+            <TableColumn fx:id="col_notes" prefWidth="150.0" text="Notes" />
+            <TableColumn fx:id="col_action" prefWidth="100.0" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

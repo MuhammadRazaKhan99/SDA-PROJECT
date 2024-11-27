@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Player_Dietplan3">
+   <children>
+      <Text fill="WHITE" layoutX="113.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="My Diet Plans" textAlignment="CENTER" />
+      <ImageView fx:id="backicon" fitHeight="49.0" fitWidth="63.0" layoutX="26.0" layoutY="23.0" onMouseClicked="#click_backicon" onMouseEntered="#hover_backicon" onMouseExited="#reset_backicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/icon_back2.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="47.0" layoutY="89.0" prefHeight="410.0" prefWidth="707.0">
+        <columns>
+          <TableColumn fx:id="col_planname" prefWidth="75.0" text="Plan Name" />
+          <TableColumn fx:id="col_goal" prefWidth="75.0" text="Goal" />
+            <TableColumn fx:id="col_meals" prefWidth="75.0" text="Meals" />
+            <TableColumn fx:id="col_calories" prefWidth="50.0" text="Calories" />
+            <TableColumn fx:id="col_carbs" prefWidth="50.0" text="Carbs" />
+            <TableColumn fx:id="col_protein" prefWidth="60.0" text="Proteins" />
+            <TableColumn fx:id="col_fat" prefWidth="50.0" text="Fat" />
+            <TableColumn fx:id="col_fiber" prefWidth="50.0" text="Fiber" />
+            <TableColumn fx:id="col_notes" prefWidth="200.0" text="Notes" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
