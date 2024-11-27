@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Player_Signup">
+   <children>
+      <AnchorPane layoutX="-12.0" prefHeight="533.0" prefWidth="226.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="#fcf5f5" layoutX="75.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Circpro">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="570.0" layoutY="-1.0" prefHeight="533.0" prefWidth="252.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fitHeight="250.0" fitWidth="273.0" layoutX="-27.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/starc1.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="402.0" fitWidth="421.0" layoutX="408.0" layoutY="128.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Pictures/roy1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="502.0" fitWidth="499.0" layoutX="437.0" layoutY="121.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Pictures/shaheen1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="64.0" fitWidth="66.0" layoutX="-2.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/LOGO_NO_BACK.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="signin_text" layoutX="446.0" layoutY="454.0" onMouseClicked="#click_text_signin" onMouseEntered="#hower_text_signin" onMouseExited="#reset_text_sign" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in" underline="true" />
+      <ImageView fitHeight="337.0" fitWidth="346.0" layoutX="-31.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/naseem1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="328.0" fitWidth="365.0" layoutX="-81.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/smith1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="458.0" fitWidth="402.0" layoutX="-52.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/kohli1.png" />
+         </image>
+      </ImageView>
+      <RadioButton fx:id="r1" layoutX="289.0" layoutY="226.0" mnemonicParsing="false" onAction="#setrole" text="Batsman">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="r2" layoutX="362.0" layoutY="226.0" mnemonicParsing="false" onAction="#setrole" text="Bowler" toggleGroup="$group" />
+      <RadioButton fx:id="r3" layoutX="425.0" layoutY="226.0" mnemonicParsing="false" onAction="#setrole" text="All Rounder" toggleGroup="$group" />
+      <AnchorPane layoutX="214.0" prefHeight="533.0" prefWidth="355.0">
+         <children>
+            <Text layoutX="134.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Sign Up" textAlignment="CENTER" />
+            <TextField fx:id="name" layoutX="107.0" layoutY="107.0" promptText="Name" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="pass" layoutX="108.0" layoutY="329.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="b" layoutX="135.0" layoutY="392.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON_signup" onMouseEntered="#hower_BUTTON_signup" onMouseExited="#reset_BUTTON_signup" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #000000;" text="Sign Up" textFill="#ffe5e5" />
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="47.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/user_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="52.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/password_icon.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="77.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account?" />
+            <TextField fx:id="address" layoutX="108.0" layoutY="145.0" promptText="Address" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="48.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/location_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="48.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/age1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="27.0" fitWidth="31.0" layoutX="53.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/icon_phone.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="age" layoutX="108.0" layoutY="180.0" promptText="Age" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="phone" layoutX="110.0" layoutY="255.0" promptText="Phone Number" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="50.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/user_icon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="username" layoutX="110.0" layoutY="292.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            
+        </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

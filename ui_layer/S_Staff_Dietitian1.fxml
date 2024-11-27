@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Staff_Dietitian1">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="WHITE" layoutX="267.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Dietitian Dashboard" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="menuicon" fitHeight="34.0" fitWidth="50.0" layoutX="3.0" layoutY="17.0" onMouseClicked="#click_menuicon" onMouseEntered="#hover_menuicon" onMouseExited="#reset_menuicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/icon_menu.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="lefttextpane" layoutY="65.0" opacity="0.76" prefHeight="467.0" prefWidth="116.0" style="-fx-background-color: #000000;">
+         <children>
+            <VBox layoutX="5.0" layoutY="27.0" prefHeight="200.0" prefWidth="128.0">
+               <children>
+                  <Label fx:id="homeLabel" onMouseClicked="#click_homeicon" prefHeight="38.0" prefWidth="145.0" text="  Home" textFill="WHITE" />
+                  <Label fx:id="joinclubLabel" onMouseClicked="#click_joinclub" prefHeight="39.0" prefWidth="147.0" text="  Join Club" textFill="WHITE" />
+                  <Label fx:id="reviewplanLabel" onMouseClicked="#click_reviewplan" prefHeight="39.0" prefWidth="147.0" text="  Review Plans" textFill="WHITE" />
+                  <Label fx:id="suggestplanLabel" onMouseClicked="#click_suggestplan" prefHeight="39.0" prefWidth="147.0" text="  Suggest Plan" textFill="WHITE" />
+                  <Label fx:id="backLabel" onMouseClicked="#click_backicon" prefHeight="39.0" prefWidth="144.0" text="  Back" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="joinclubPane" layoutX="3.0" layoutY="60.0" prefHeight="473.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="473.0" fitWidth="803.0" layoutX="-5.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/dietplan2.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="286.0" layoutX="575.0" layoutY="87.0" opacity="0.49" stroke="BLACK" strokeType="INSIDE" width="180.0" />
+            <Text fill="WHITE" layoutX="165.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Join Club">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="598.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leave Current Club?" />
+            <Button fx:id="b1" layoutX="622.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON1_leave" onMouseEntered="#hower_BUTTON1_leave" onMouseExited="#reset_BUTTON1_leave" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #000000;" text="Leave" textFill="#ffe5e5" />
+            <ImageView fitHeight="150.0" fitWidth="136.0" layoutX="583.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/question%20mark.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table1" layoutX="165.0" layoutY="87.0" prefHeight="286.0" prefWidth="398.0">
+               <columns>
+                  <TableColumn fx:id="col1_clubname" prefWidth="139.0" text="Club Name" />
+                  <TableColumn fx:id="col1_managername" prefWidth="142.0" text="Manager Name" />
+                  <TableColumn fx:id="col1_action" prefWidth="115.0" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="reviewplanPane" layoutX="-2.0" layoutY="60.0" prefHeight="473.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="473.0" fitWidth="803.0" layoutX="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/dietplan2.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table" layoutX="82.0" layoutY="64.0" prefHeight="341.0" prefWidth="640.0">
+              <columns>
+                <TableColumn fx:id="col2_planname" prefWidth="120.0" text="Plan Name" />
+                <TableColumn fx:id="col2_goal" prefWidth="90.0" text="Goal" />
+                  <TableColumn fx:id="col2_meals" text="Meals" />
+                  <TableColumn fx:id="col2_calories" prefWidth="50.0" text="Calories" />
+                  <TableColumn fx:id="col2_carbs" prefWidth="50.0" text="Carbs" />
+                  <TableColumn fx:id="col2_protein" prefWidth="60.0" text="Proteins" />
+                  <TableColumn fx:id="col2_fat" prefWidth="50.0" text="Fat" />
+                  <TableColumn fx:id="col2_fiber" prefWidth="50.0" text="Fiber" />
+                  <TableColumn fx:id="col2_action" prefWidth="75.0" />
+              </columns>
+            </TableView>
+            <Text layoutX="89.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Review Diet Plans">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="suggestplanPane" layoutX="-2.0" layoutY="60.0" prefHeight="473.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="473.0" fitWidth="800.0" layoutY="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/dietplan2.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="427.0" layoutX="244.0" layoutY="10.0" opacity="0.35" stroke="#d0c4c4" strokeType="INSIDE" width="296.0" />
+            <TextField fx:id="planname" layoutX="330.0" layoutY="19.0" promptText="Myplan1" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="b_suggest" layoutX="344.0" layoutY="389.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON_suggest" onMouseEntered="#hower_BUTTON_suggest" onMouseExited="#reset_BUTTON_suggest" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #000000;" text="Suggest" textFill="#ffe5e5" />
+            <TextField fx:id="meals" layoutX="330.0" layoutY="83.0" promptText="Meals" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="notes" layoutX="265.0" layoutY="297.0" prefHeight="74.0" prefWidth="246.0" promptText="Notes" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" />
+            <TextField fx:id="goal" layoutX="330.0" layoutY="50.0" promptText="Weight loss" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <TextField fx:id="calories" layoutX="398.0" layoutY="121.0" prefHeight="29.0" prefWidth="42.0" promptText="10" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" />
+            <Text fill="#d3d3d3" layoutX="335.0" layoutY="139.0" opacity="0.69" strokeType="OUTSIDE" strokeWidth="0.0" text="Calories" />
+            <Text fill="#d7d2d2" layoutX="335.0" layoutY="172.0" opacity="0.69" strokeType="OUTSIDE" strokeWidth="0.0" text="Carbs" />
+            <Text fill="#c9c6c6" layoutX="336.0" layoutY="208.0" opacity="0.68" strokeType="OUTSIDE" strokeWidth="0.0" text="Protein" />
+            <Text fill="#d0d0d0" layoutX="337.0" layoutY="243.0" opacity="0.67" strokeType="OUTSIDE" strokeWidth="0.0" text="Fat" />
+            <Text fill="#c6c5c5" layoutX="337.0" layoutY="278.0" opacity="0.69" strokeType="OUTSIDE" strokeWidth="0.0" text="Fiber" />
+            <TextField fx:id="carbs" layoutX="398.0" layoutY="155.0" prefHeight="29.0" prefWidth="42.0" promptText="10" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" />
+            <TextField fx:id="proteins" layoutX="399.0" layoutY="190.0" prefHeight="29.0" prefWidth="42.0" promptText="10" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" />
+            <TextField fx:id="fiber" layoutX="400.0" layoutY="261.0" prefHeight="29.0" prefWidth="42.0" promptText="10" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" />
+            <Text fill="#e8e4e4" layoutX="263.0" layoutY="37.0" opacity="0.69" strokeType="OUTSIDE" strokeWidth="0.0" text="Plan Name" />
+            <Text fill="#c9c6c6" layoutX="263.0" layoutY="68.0" opacity="0.68" strokeType="OUTSIDE" strokeWidth="0.0" text="Goal" />
+            <Text fill="#d3d0d0" layoutX="263.0" layoutY="101.0" opacity="0.69" strokeType="OUTSIDE" strokeWidth="0.0" text="Meals" />
+            <TextField fx:id="fat" layoutX="400.0" layoutY="224.0" prefHeight="29.0" prefWidth="42.0" promptText="10" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" />
+            <Text layoutX="14.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suggest Diet Plan">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

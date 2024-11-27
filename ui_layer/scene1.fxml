@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.controller1">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="145.0" prefHeight="278.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="290.0" fitWidth="800.0" layoutX="-1.0" opacity="0.72" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/pitch1.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="127.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="295.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COACH">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="454.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRAINER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="124.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STADIUM ">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="619.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DIETITION">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="300.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLUB">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="453.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHYSICIAN">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="122.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="284.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MANAGER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="dietitianicon" fitHeight="51.0" fitWidth="51.0" layoutX="617.0" layoutY="86.0" onMouseClicked="#click_dietitianicon" onMouseEntered="#hover_dietitianicon" onMouseExited="#reset_dietitianicon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/dietition.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="trainericon" fitHeight="45.0" fitWidth="51.0" layoutX="455.0" layoutY="91.0" onMouseClicked="#click_trainericon" onMouseEntered="#hover_trainericon" onMouseExited="#reset_trainericon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/trainer.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="st_managericon" fitHeight="40.0" fitWidth="44.0" layoutX="132.0" layoutY="188.0" onMouseClicked="#click_st_managericon" onMouseEntered="#hover_st_managericon" onMouseExited="#reset_st_managericon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/manager.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cl_managericon" fitHeight="40.0" fitWidth="40.0" layoutX="295.0" layoutY="188.0" onMouseClicked="#click_cl_managericon" onMouseEntered="#hover_cl_managericon" onMouseExited="#reset_cl_managericon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/manager.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="physicianicon" fitHeight="51.0" fitWidth="44.0" layoutX="463.0" layoutY="184.0" onMouseClicked="#click_physicianicon" onMouseEntered="#hover_physicianicon" onMouseExited="#reset_physicianicon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/physician.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="coachicon" fitHeight="68.0" fitWidth="64.0" layoutX="294.0" layoutY="79.0" onMouseClicked="#click_coachicon" onMouseEntered="#hover_coachicon" onMouseExited="#reset_coachicon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/trainer2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="playericon" fitHeight="60.0" fitWidth="51.0" layoutX="123.0" layoutY="88.0" onMouseClicked="#click_playericon" onMouseEntered="#hover_playericon" onMouseExited="#reset_playericon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/player_up.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="heading" layoutX="10.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select your role to get started!">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane" layoutX="1.0" layoutY="-117.0" onMouseEntered="#movePaneDown" onMouseExited="#resetPanePosition" prefHeight="241.0" prefWidth="800.0">
+         <children>
+            <ImageView fx:id="topimage" fitHeight="262.0" fitWidth="800.0" layoutX="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/image1.jpg" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="328.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="81.0" fitWidth="116.0" layoutX="-12.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/LOGO_NO_BACK.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="76.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cricpro">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutY="435.0" onMouseEntered="#movePaneup2" onMouseExited="#resetPanePosition2" prefHeight="206.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="WHITE" layoutX="57.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact us">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Text fill="#fffbfb" layoutX="605.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="051-999911">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text fill="#fffbfb" layoutX="605.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="051-999912">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="51.0" fitWidth="51.0" layoutX="47.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/facebook.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="102.0" fitWidth="161.0" layoutX="350.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/youtube.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="81.0" layoutX="249.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/ninkdin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="61.0" fitWidth="81.0" layoutX="480.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/twitter.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="64.0" layoutX="146.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/insta.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="533.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Player_Profile">
+   <children>
+      <CubicCurve controlX1="101.0" controlX2="354.0" controlY1="-50.0" controlY2="-50.0" endX="465.0" endY="50.0" fill="#252a2f" layoutX="151.0" layoutY="94.0" startX="-12.0" startY="50.0" stroke="BLACK" />
+      <AnchorPane layoutX="92.0" layoutY="146.0" prefHeight="258.0" prefWidth="601.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <ImageView fitHeight="207.0" fitWidth="250.0" layoutX="373.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/user_icon.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelname" layoutX="398.0" layoutY="196.0" prefHeight="46.0" prefWidth="216.0" text="NAME LABEL">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+            <Text layoutX="24.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCORE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WICKETS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BAT AVERAGE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOWL AVERAGE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MATCHES">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Label fx:id="labelmatches" layoutX="187.0" layoutY="29.0" prefHeight="32.0" prefWidth="174.0" text="NAME LABEL">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelscore" layoutX="186.0" layoutY="62.0" prefHeight="32.0" prefWidth="174.0" text="NAME LABEL">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelwicket" layoutX="186.0" layoutY="93.0" prefHeight="32.0" prefWidth="174.0" text="NAME LABEL">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelbatavg" layoutX="186.0" layoutY="123.0" prefHeight="32.0" prefWidth="174.0" text="NAME LABEL">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelbowlavg" layoutX="187.0" layoutY="155.0" prefHeight="32.0" prefWidth="174.0" text="NAME LABEL">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="35.0" layoutX="124.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+      <Text layoutX="138.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLAYER PROFILE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <CubicCurve controlX1="-44.0" controlX2="50.0" controlY1="-243.0" controlY2="100.0" endX="449.0" endY="-45.0" fill="#252a2f" layoutX="244.0" layoutY="449.0" startX="-152.0" startY="-45.0" stroke="BLACK" />
+      <ImageView fx:id="backicon" fitHeight="54.0" fitWidth="63.0" layoutX="29.0" layoutY="25.0" onMouseClicked="#click_backicon" onMouseEntered="#hover_backicon" onMouseExited="#reset_backicon" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pictures/icon_back2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

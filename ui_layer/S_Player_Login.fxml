@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Player_login">
+   <left>
+      <AnchorPane prefHeight="494.0" prefWidth="404.0" style="-fx-background-color: #000000;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="92.0" layoutY="15.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/LOGO_NO_BACK.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="77.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Cricpro" textAlignment="CENTER" />
+            <ImageView fx:id="playerspic" fitHeight="405.0" fitWidth="396.0" layoutX="4.0" layoutY="53.0" onMouseEntered="#hover_playerspic" onMouseExited="#reset_playerspic" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/group_players.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </left>
+   <right>
+      <AnchorPane onMouseEntered="#hower_text_signup" prefHeight="200.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="username" layoutX="140.0" layoutY="235.0" promptText="User Name" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <PasswordField fx:id="pass" layoutX="140.0" layoutY="290.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;" />
+            <Button fx:id="b" layoutX="158.0" layoutY="348.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON_signin" onMouseEntered="#hower_BUTTON_signin" onMouseExited="#reset_BUTTON_signin" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Login" />
+            <Text layoutX="129.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Player Login" textAlignment="CENTER" />
+            <ImageView fitHeight="112.0" fitWidth="155.0" layoutX="140.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/users_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="79.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/user_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="37.0" layoutX="79.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/password_icon.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="signup_text" layoutX="245.0" layoutY="431.0" onMouseClicked="#click_text_signup" onMouseEntered="#hower_text_signup" onMouseExited="#reset_text_signup" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up" underline="true" />
+            <Text layoutX="105.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" />
+            <ImageView fx:id="backicon" fitHeight="49.0" fitWidth="63.0" layoutX="6.0" layoutY="67.0" onMouseClicked="#click_backicon" onMouseEntered="#hover_backicon" onMouseExited="#reset_backicon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/icon_back.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

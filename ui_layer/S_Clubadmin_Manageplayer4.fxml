@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Clubadmin_manageplayer4">
+   <children>
+      <AnchorPane layoutY="66.0" prefHeight="467.0" prefWidth="800.0" style="-fx-background-color: #1a1a1a;">
+         <children>
+            <AnchorPane fx:id="addPlayerPane" layoutX="55.0" prefHeight="467.0" prefWidth="747.0" visible="false">
+               <children>
+                  <ImageView fitHeight="490.0" fitWidth="814.0" layoutX="-74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Pictures/county.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="14.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Players" wrappingWidth="111.416015625">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="table1" layoutX="10.0" layoutY="68.0" prefHeight="329.0" prefWidth="698.0">
+                    <columns>
+                      <TableColumn fx:id="col1_name" prefWidth="70.0" text="Name" />
+                      <TableColumn fx:id="col1_address" prefWidth="70.0" text="Address" />
+                        <TableColumn fx:id="col1_age" prefWidth="40.0" text="Age" />
+                        <TableColumn fx:id="col1_phone" prefWidth="65.0" text="Phone No" />
+                        <TableColumn fx:id="col1_role" prefWidth="60.0" text="Role" />
+                        <TableColumn fx:id="col1_score" prefWidth="45.0" text="Score" />
+                        <TableColumn fx:id="col1_wickets" prefWidth="60.0" text="Wickets" />
+                        <TableColumn fx:id="col1_matches" prefWidth="60.0" text="Matches" />
+                        <TableColumn fx:id="col1_batavg" prefWidth="50.0" text="BatAvg" />
+                        <TableColumn fx:id="col1_bowlavg" prefWidth="55.0" text="BowlAvg" />
+                        <TableColumn fx:id="col1_action" prefWidth="120.0" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="removePlayerPane" layoutX="50.0" prefHeight="467.0" prefWidth="747.0" visible="false">
+               <children>
+                  <ImageView fitHeight="497.0" fitWidth="824.0" layoutX="-71.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Pictures/county.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="table2" layoutX="8.0" layoutY="94.0" prefHeight="329.0" prefWidth="717.0">
+                     <columns>
+                        <TableColumn fx:id="col2_name" prefWidth="70.0" text="Name" />
+                        <TableColumn fx:id="col2_address" prefWidth="70.0" text="Address" />
+                        <TableColumn fx:id="col2_age" prefWidth="40.0" text="Age" />
+                        <TableColumn fx:id="col2_phone" prefWidth="65.0" text="Phone No" />
+                        <TableColumn fx:id="col2_role" prefWidth="60.0" text="Role" />
+                        <TableColumn fx:id="col2_score" prefWidth="45.0" text="Score" />
+                        <TableColumn fx:id="col2_wickets" prefWidth="60.0" text="Wickets" />
+                        <TableColumn fx:id="col2_matches" prefWidth="60.0" text="Matches" />
+                        <TableColumn fx:id="col2_batavg" prefWidth="50.0" text="BatAvg" />
+                        <TableColumn fx:id="col2_bowlavg" prefWidth="55.0" text="BowlAvg" />
+                        <TableColumn fx:id="col2_action" prefWidth="135.0" />
+                     </columns>
+                  </TableView>
+                  <Text fill="#070606" layoutX="14.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Players" AnchorPane.bottomAnchor="427.7294921875" AnchorPane.rightAnchor="583.89453125">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font></Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="addStaffPane" layoutX="60.0" prefHeight="467.0" prefWidth="740.0" visible="false">
+               <children>
+                  <ImageView fitHeight="507.0" fitWidth="740.0" layoutY="4.0" opacity="0.6" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Pictures/county.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="22.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Staff">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="table3" layoutX="12.0" layoutY="97.0" prefHeight="329.0" prefWidth="670.0">
+                     <columns>
+                        <TableColumn fx:id="col3_name" prefWidth="141.0" text="Name" />
+                        <TableColumn fx:id="col3_address" prefWidth="70.0" text="Address" />
+                        <TableColumn fx:id="col3_age" minWidth="4.0" prefWidth="40.0" text="Age" />
+                        <TableColumn fx:id="col3_phone" prefWidth="88.0" text="Phone No" />
+                        <TableColumn fx:id="col3_experience" prefWidth="70.0" text="Experience" />
+                        <TableColumn fx:id="col3_stafftype" prefWidth="108.0" text="Staff Type" />
+                        <TableColumn fx:id="col3_action" prefWidth="150.0" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="scheduleMatchPane" layoutX="50.0" prefHeight="467.0" prefWidth="746.0">
+               <children>
+                  <AnchorPane layoutY="1.0" prefHeight="467.0" prefWidth="747.0" style="-fx-background-color: #FFFFFF;">
+                     <children>
+                        <ImageView fitHeight="468.0" fitWidth="807.0" layoutX="-63.0" layoutY="-1.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../Pictures/county.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="353.0" layoutX="348.0" layoutY="65.0" opacity="0.59" stroke="BLACK" strokeType="INSIDE" width="342.0" />
+                        <TableView fx:id="table10" layoutX="30.0" layoutY="68.0" prefHeight="346.0" prefWidth="289.0">
+                          <columns>
+                            <TableColumn fx:id="col10_name" prefWidth="100.0" text="Name" />
+                            <TableColumn fx:id="col10_role" prefWidth="85.0" text="Role" />
+                              <TableColumn fx:id="col10_action" prefWidth="100.0" />
+                          </columns>
+                        </TableView>
+                        <Label fx:id="countLabel10" layoutX="50.0" layoutY="21.0" prefHeight="34.0" prefWidth="303.0" text="Label">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font></Label>
+                        <ComboBox fx:id="stadiumComboBox10" layoutX="485.0" layoutY="197.0" prefHeight="25.0" prefWidth="183.0" />
+                        <ComboBox fx:id="clubComboBox10" layoutX="485.0" layoutY="238.0" prefHeight="25.0" prefWidth="183.0" />
+                        <Text fill="WHITE" layoutX="445.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Shedule Match" textAlignment="CENTER" />
+                        <Button fx:id="b10" layoutX="485.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON_10" onMouseEntered="#hower_BUTTON_10" onMouseExited="#reset_BUTTON_10" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #000000;" text="Shedule" textFill="#ffe5e5" />
+                        <DatePicker fx:id="datePicker10" layoutX="485.0" layoutY="278.0" prefHeight="25.0" prefWidth="183.0" />
+                        <Text fill="WHITE" layoutX="389.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stadium" />
+                        <Text fill="WHITE" layoutX="389.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oponent Club" />
+                        <Text fill="WHITE" layoutX="397.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="removeStaffPane" layoutX="58.0" layoutY="-1.0" prefHeight="468.0" prefWidth="740.0" visible="false">
+               <children>
+                  <ImageView fitHeight="497.0" fitWidth="814.0" layoutX="-74.0" opacity="0.61" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Pictures/county.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="table4" layoutX="21.0" layoutY="100.0" prefHeight="329.0" prefWidth="670.0">
+                     <columns>
+                        <TableColumn fx:id="col4_name" prefWidth="141.0" text="Name" />
+                        <TableColumn fx:id="col4_address" prefWidth="70.0" text="Address" />
+                        <TableColumn fx:id="col4_age" minWidth="4.0" prefWidth="40.0" text="Age" />
+                        <TableColumn fx:id="col4_phone" prefWidth="88.0" text="Phone No" />
+                        <TableColumn fx:id="col4_experience" prefWidth="70.0" text="Experience" />
+                        <TableColumn fx:id="col4_stafftype" prefWidth="108.0" text="Staff Type" />
+                        <TableColumn fx:id="col4_action" prefWidth="150.0" />
+                     </columns>
+                  </TableView>
+                  <Text layoutX="29.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove Staff " wrappingWidth="230.000004529953">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lefticonpane" layoutX="-9.0" prefHeight="467.0" prefWidth="61.0" style="-fx-background-color: White;">
+               <children>
+                  <VBox layoutY="17.0" prefHeight="200.0" prefWidth="51.0">
+                     <children>
+                        <ImageView fitHeight="34.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Pictures/icon_home.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Pictures/icon_add.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="53.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Pictures/icon_remove.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="38.0" fitWidth="59.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../../../Pictures/match.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="-1.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Pictures/icon_add.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Pictures/icon_remove.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="28.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Pictures/icon_request.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="3.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="10.0" pickOnBounds="true" x="10.0">
+                           <image>
+                              <Image url="@../../../Pictures/icon_back.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="matchrequestPane" layoutX="60.0" prefHeight="467.0" prefWidth="740.0" style="-fx-background-color: #FFFFFF;" visible="false">
+               <children>
+                  <ImageView fitHeight="508.0" fitWidth="759.0" layoutX="-19.0" layoutY="-1.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../Pictures/county.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="275.0" layoutX="492.0" layoutY="65.0" opacity="0.78" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="373.0" layoutX="16.0" layoutY="66.0" opacity="0.78" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label fx:id="countLabel_p1" layoutX="52.0" layoutY="66.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="#f8f8f8" />
+                  <Label fx:id="countLabel_p2" layoutX="51.0" layoutY="93.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="countLabel_p3" layoutX="48.0" layoutY="120.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="countLabel_p4" layoutX="49.0" layoutY="144.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="countLabel_p5" layoutX="51.0" layoutY="177.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="#ebe8e8" />
+                  <Label fx:id="countLabel_p6" layoutX="51.0" layoutY="210.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="#ebebeb" />
+                  <Label fx:id="countLabel_p7" layoutX="51.0" layoutY="243.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="countLabel_p8" layoutX="51.0" layoutY="276.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="WHITE" />
+                  <Label fx:id="countLabel_p9" layoutX="51.0" layoutY="315.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="#fffafa" />
+                  <Label fx:id="countLabel_p10" layoutX="51.0" layoutY="348.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="#fcfafa" />
+                  <Label fx:id="countLabel_p11" layoutX="51.0" layoutY="381.0" prefHeight="33.0" prefWidth="150.0" text="Label" textFill="#fffdfd" />
+                  <TableView fx:id="table20" layoutX="232.0" layoutY="68.0" prefHeight="373.0" prefWidth="230.0">
+                    <columns>
+                      <TableColumn fx:id="col20_name" prefWidth="75.0" text="Name" />
+                      <TableColumn fx:id="col20_role" prefWidth="75.0" text="Role" />
+                        <TableColumn fx:id="col20_action" prefWidth="75.0" />
+                    </columns>
+                  </TableView>
+                  <Text layoutX="272.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR PLAYERS">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></Text>
+                  <Button fx:id="b21" layoutX="545.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON_21" onMouseEntered="#hower_BUTTON_21" onMouseExited="#reset_BUTTON_21" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Reject" />
+                  <Text fill="WHITE" layoutX="543.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ACCEPT REQUEST" wrappingWidth="94.236328125" />
+                  <Label fx:id="countLabel20" layoutX="511.0" layoutY="77.0" prefHeight="33.0" prefWidth="200.0" text="Players Entered" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                  <Button fx:id="b20" layoutX="551.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON_20" onMouseEntered="#hower_BUTTON_20" onMouseExited="#reset_BUTTON_20" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Accept" />
+                  <Text fill="#fffafa" layoutX="540.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REJECT REQUEST" />
+                  <Label fx:id="countLabelopen" layoutX="41.0" layoutY="26.0" prefHeight="33.0" prefWidth="150.0" text="Oponent Club">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lefttextpane" layoutX="56.0" opacity="0.54" prefHeight="467.0" prefWidth="101.0" style="-fx-background-color: #000000;">
+               <children>
+                  <VBox layoutY="17.0" prefHeight="275.0" prefWidth="94.0">
+                     <children>
+                        <Label fx:id="homeLabel" onMouseClicked="#click_homeicon" prefHeight="34.0" prefWidth="117.0" text="  Home" textFill="WHITE" />
+                        <Label fx:id="addPlayerLabel" onMouseClicked="#click_AddPlayer" prefHeight="34.0" prefWidth="117.0" text="  Add Players" textFill="WHITE" />
+                        <Label fx:id="removePlayerLabel" onMouseClicked="#click_RemovePlayer" prefHeight="34.0" prefWidth="117.0" text="  Remove Players" textFill="WHITE" />
+                        <Label fx:id="scheduleMatchLabel" onMouseClicked="#click_ScheduleMatch" prefHeight="34.0" prefWidth="117.0" text="  Shedule Match" textFill="#fff9f9" />
+                        <Label fx:id="addStaffLabel" onMouseClicked="#click_AddStaff" prefHeight="34.0" prefWidth="117.0" text="  Add Staff" textFill="#fcfcfc" />
+                        <Label fx:id="removeStaffLabel" onMouseClicked="#click_RemoveStaff" prefHeight="34.0" prefWidth="117.0" text="  Remove Staff" textFill="WHITE" />
+                        <Label fx:id="matchrequestLabel" onMouseClicked="#click_MatchRequest" prefHeight="34.0" prefWidth="117.0" text="  Match Request" textFill="WHITE" />
+                        <Label fx:id="backLabel" onMouseClicked="#click_backicon" prefHeight="34.0" prefWidth="117.0" text="  Back" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="66.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <ImageView fx:id="menuicon" fitHeight="34.0" fitWidth="50.0" layoutX="2.0" layoutY="21.0" onMouseClicked="#click_menuicon" onMouseEntered="#hover_menuicon" onMouseExited="#reset_menuicon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/icon_menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

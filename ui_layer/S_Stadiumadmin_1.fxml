@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="533.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui_layer.C_Stadiumadmin1">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #000000;">
+         <children>
+            <Text fill="WHITE" layoutX="271.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25;" text="Stadium Admin Dashboard" textAlignment="CENTER" />
+            <ImageView fx:id="menuicon" fitHeight="46.0" fitWidth="50.0" layoutX="15.0" layoutY="17.0" onMouseClicked="#click_menuicon" onMouseEntered="#hover_menuicon" onMouseExited="#reset_menuicon" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Pictures/icon_menu.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="lefttextpane" layoutY="62.0" prefHeight="467.0" prefWidth="153.0" style="-fx-background-color: #000000;">
+         <children>
+            <VBox layoutX="5.0" layoutY="27.0" prefHeight="258.0" prefWidth="128.0">
+               <children>
+                  <Label fx:id="homeLabel" onMouseClicked="#click_homeicon" prefHeight="38.0" prefWidth="145.0" text="  Home" textFill="WHITE" />
+                  <Label fx:id="requestmatchLabel" onMouseClicked="#click_requestmatch" prefHeight="39.0" prefWidth="147.0" text="  Conduct Match" textFill="WHITE" />
+                  <Label fx:id="requestsolotrainingLabel" onMouseClicked="#click_requestsolotrain" prefHeight="39.0" prefWidth="147.0" text="  Solo Training Requests" textFill="WHITE" />
+                  <Label fx:id="requestteamtrainingLabel" onMouseClicked="#click_requestteamtrain" prefHeight="39.0" prefWidth="144.0" text="  Team Practice Requests" textFill="WHITE" />
+                  <Label fx:id="backLabel" onMouseClicked="#click_backicon" prefHeight="38.0" prefWidth="145.0" text="  Back" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="requestmatchPane" layoutY="59.0" prefHeight="467.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="467.0" fitWidth="800.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/stad1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelteam1" layoutX="222.0" layoutY="18.0" prefHeight="17.0" prefWidth="114.0" text="team1" textFill="#fffdfd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fill="#fff8f8" layoutX="168.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLUB">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Label fx:id="label_p1" layoutX="125.0" layoutY="78.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Text fill="WHITE" layoutX="428.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLUB">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Label fx:id="labelteam2" layoutX="485.0" layoutY="16.0" prefHeight="17.0" prefWidth="114.0" text="team1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="p1_score" layoutX="217.0" layoutY="77.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p1_wickets" layoutX="279.0" layoutY="77.0" prefHeight="25.0" prefWidth="30.0" />
+            <Label fx:id="label_p2" layoutX="125.0" layoutY="107.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="p2_score" layoutX="217.0" layoutY="106.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p2_wickets" layoutX="279.0" layoutY="106.0" prefHeight="25.0" prefWidth="30.0" />
+            <Label fx:id="label_p21" layoutX="380.0" layoutY="77.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="#fffdfd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p22" layoutX="380.0" layoutY="107.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p23" layoutX="380.0" layoutY="137.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="#fff9f9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p24" layoutX="380.0" layoutY="169.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p25" layoutX="382.0" layoutY="203.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="#fffefe">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p28" layoutX="384.0" layoutY="296.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p26" layoutX="382.0" layoutY="235.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="#fffafa">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p27" layoutX="384.0" layoutY="264.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="#fffdfd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p29" layoutX="385.0" layoutY="328.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="#ffe5e5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="p21_score" layoutX="497.0" layoutY="78.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p22_score" layoutX="497.0" layoutY="108.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p23_score" layoutX="497.0" layoutY="140.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p24_score" layoutX="497.0" layoutY="172.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p25_score" layoutX="498.0" layoutY="206.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p28_score" layoutX="500.0" layoutY="299.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p26_score" layoutX="498.0" layoutY="238.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p27_score" layoutX="500.0" layoutY="267.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p29_score" layoutX="501.0" layoutY="331.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p21_wickets" layoutX="555.0" layoutY="77.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p22_wickets" layoutX="555.0" layoutY="107.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p23_wickets" layoutX="555.0" layoutY="139.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p24_wickets" layoutX="555.0" layoutY="171.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p25_wickets" layoutX="556.0" layoutY="205.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p28_wickets" layoutX="558.0" layoutY="298.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p26_wickets" layoutX="556.0" layoutY="237.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p27_wickets" layoutX="558.0" layoutY="266.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p29_wickets" layoutX="559.0" layoutY="330.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <Text fill="WHITE" layoutX="493.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RUNS">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="542.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WICKETS">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="214.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RUNS">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="259.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WICKETS">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Label fx:id="label_p3" layoutX="128.0" layoutY="133.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p4" layoutX="127.0" layoutY="164.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p5" layoutX="129.0" layoutY="194.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p8" layoutX="131.0" layoutY="294.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p6" layoutX="130.0" layoutY="229.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p7" layoutX="131.0" layoutY="264.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p9" layoutX="132.0" layoutY="327.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="p3_score" layoutX="218.0" layoutY="136.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p4_score" layoutX="217.0" layoutY="167.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p5_score" layoutX="218.0" layoutY="197.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p8_score" layoutX="220.0" layoutY="297.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p6_score" layoutX="219.0" layoutY="232.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p7_score" layoutX="220.0" layoutY="267.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p9_score" layoutX="221.0" layoutY="330.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p3_wickets" layoutX="276.0" layoutY="135.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p4_wickets" layoutX="275.0" layoutY="166.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p5_wickets" layoutX="276.0" layoutY="196.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p8_wickets" layoutX="278.0" layoutY="296.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p6_wickets" layoutX="277.0" layoutY="231.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p7_wickets" layoutX="278.0" layoutY="266.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p9_wickets" layoutX="279.0" layoutY="329.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <Label fx:id="labeldate" layoutX="14.0" layoutY="18.0" prefHeight="17.0" prefWidth="114.0" text="Date">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p211" layoutX="385.0" layoutY="391.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p210" layoutX="385.0" layoutY="360.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="p211_score" layoutX="501.0" layoutY="394.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p210_score" layoutX="501.0" layoutY="363.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p211_wickets" layoutX="559.0" layoutY="393.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p210_wickets" layoutX="559.0" layoutY="362.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <Label fx:id="label_p11" layoutX="130.0" layoutY="387.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_p10" layoutX="130.0" layoutY="356.0" prefHeight="17.0" prefWidth="114.0" text="player1" textFill="#fffefe">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="p11_score" layoutX="220.0" layoutY="390.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p10_score" layoutX="220.0" layoutY="359.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p11_wickets" layoutX="278.0" layoutY="389.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <TextField fx:id="p10_wickets" layoutX="278.0" layoutY="358.0" prefHeight="25.0" prefWidth="30.0" style="-fx-border-width: 2px 2px 2px 0px;" />
+            <Button fx:id="bs" layoutX="623.0" layoutY="172.0" mnemonicParsing="false" onMouseClicked="#click_BUTTON_signup" onMouseEntered="#hower_BUTTON_signup" onMouseExited="#reset_BUTTON_signup" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #000000; -fx-text-fill: #FFFFFF;" text="Save" />
+            <RadioButton fx:id="r1" layoutX="624.0" layoutY="109.0" mnemonicParsing="false" onAction="#setrole" text="Team 1" textFill="#fffefe">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="r2" layoutX="626.0" layoutY="135.0" mnemonicParsing="false" onAction="#setrole" text="Team 2" textFill="#ffe9e9" toggleGroup="$group" />
+            <Text fill="WHITE" layoutX="630.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WINNER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="requestsolotrainPane" layoutY="59.0" prefHeight="475.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="475.0" fitWidth="800.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/stad1.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table2" layoutX="62.0" layoutY="54.0" prefHeight="334.0" prefWidth="655.0">
+              <columns>
+                <TableColumn fx:id="col2_playername" prefWidth="120.0" text="Player name" />
+                <TableColumn fx:id="col2_playerrole" prefWidth="100.0" text="Role" />
+                  <TableColumn fx:id="col2_stadiumname" prefWidth="120.0" text="Stadium Name" />
+                  <TableColumn fx:id="col2_d" prefWidth="100.0" text="Date" />
+                  <TableColumn fx:id="col2_trainername" prefWidth="120.0" text="Trainer" />
+                  <TableColumn fx:id="col2_action" prefWidth="90.0" />
+              </columns>
+            </TableView>
+            <Text fill="#fffefe" layoutX="61.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SOLO TRAINING REQUESTS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="requestteamtrainPane" layoutY="59.0" prefHeight="475.0" prefWidth="800.0" visible="false">
+         <children>
+            <ImageView fitHeight="475.0" fitWidth="800.0" layoutY="1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../Pictures/stad1.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table3" layoutX="111.0" layoutY="65.0" prefHeight="327.0" prefWidth="552.0">
+              <columns>
+                <TableColumn fx:id="col3_clubname" prefWidth="120.0" text="Club Name" />
+                <TableColumn fx:id="col3_coachname" prefWidth="120.0" text="Coach Name" />
+                  <TableColumn fx:id="col3_stadiumname" prefWidth="120.0" text="Stadium Name" />
+                  <TableColumn fx:id="col3_date" prefWidth="110.0" text="Date" />
+                  <TableColumn fx:id="col3_action" prefWidth="75.0" />
+              </columns>
+            </TableView>
+            <Text fill="#fffbfb" layoutX="110.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TEAM TRAINING SESSION">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
